@@ -1,0 +1,9 @@
+[SddmGreeterTheme]
+Name=Samaritan
+Description=Samaritan UI styled sddm theme.
+Author=Omer
+Version=1.0
+MainScript=Main.qml
+Theme-Id=samaritan
+QtVersion=6
+ConfigFile=theme.conf
