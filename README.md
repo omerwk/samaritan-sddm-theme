@@ -67,3 +67,19 @@ sddm-greeter --test-mode --theme /usr/share/sddm/samaritan
 ```
 
 
+
+## Inspiration
+
+This project tries to recreate the visual style of the **Samaritan** artificial intelligence from the television series **Person of Interest**.
+
+it is **not** intended to be an exact replica, but more of a faithful interpretation adapted to an sddm login screen.
+
+it is also important for me to make it clear that most of the code in this project was taken from [Void SDDM Theme](https://github.com/talyamm/VoidSDDM and also written with the assistance of an AI (how ironic). So I am sorry if you are against that, but I hope that you can enjoy this nonetheless.
+
+
+## Requirements
+
+- SDDM
+- Qt6
+
+
