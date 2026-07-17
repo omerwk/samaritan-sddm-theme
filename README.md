@@ -13,12 +13,13 @@ https://github.com/user-attachments/assets/4ed55303-bb48-4a4c-9c4a-4141624bdf30
 - Animated Samaritan promot with password feedback
 - System status panel showing real system information like hostname and cpu
 - System profile containing both real and fictional stats 
-- Configurable colors and fonts through theme.conf
+- Configurable colors and fonts 
+- Dark and light mode support
 
 ### Planned
 
-- Optional light mode
 - Option to turn off boot sequence
+
 
 
 ## Keyboard shortcuts
@@ -29,7 +30,6 @@ https://github.com/user-attachments/assets/4ed55303-bb48-4a4c-9c4a-4141624bdf30
 - F10: Suspend
 - F11: Shutdown
 - F12: Reboot
-
 
 
 
@@ -66,6 +66,39 @@ You can preview the theme without having to logout by running:
 sddm-greeter --test-mode --theme /usr/share/sddm/samaritan
 ```
 
+
+
+## Customization
+
+###  Dark and light mode
+
+To switch between the default dark mode and the optional light mode, edit the following line 
+in metadata.desktop:
+
+```ini
+ConfigFile=presets/dark.conf
+```
+
+Use presets/dark.conf for dark mode or presets/light.conf for light mode.
+
+
+### Colors and font
+
+Every color and font is configurable through the active preset (dark.conf or light.conf).
+Each option has comments to explain what it controls. Leave a value empty 
+to use the default.
+
+
+### Animations
+
+As of now you can't really customize the animations too much through the .conf files, might be 
+changed in the future if there is enough interest.
+
+
+### Other
+
+Other things like the mouse cursor, password visibility indicator, keyboard shortcut helper and more
+can be individually toggled on or off. 
 
 
 ## Inspiration
