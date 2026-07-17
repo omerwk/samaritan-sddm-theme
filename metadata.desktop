@@ -6,4 +6,8 @@ Version=1.0
 MainScript=Main.qml
 Theme-Id=samaritan
 QtVersion=6
-ConfigFile=theme.conf
+
+# replace dark.conf with light.conf for light mode
+ConfigFile=presets/dark.conf
+
+

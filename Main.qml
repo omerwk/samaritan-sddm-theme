@@ -21,7 +21,6 @@ Rectangle {
     property bool samaritanVisible: false
     property bool loginSuccessful: false
     property int osAgeSeconds: SystemInfo.os_age_seconds // OS Age
-    property string backgroundImage: config.stringValue("backgroundImage") || "" // background image
     property string currentTime: "" // system clock
     property int threatsIdentified: randomInt(1000, 99999) // threats identified counter
     property int animationDuration: config.intValue("animationDuration") || 200
@@ -313,15 +312,6 @@ Rectangle {
 
     }
 
-    // Background image
-    Image {
-        id: backgroundImageComponent
-
-        anchors.fill: parent
-        source: mainRect.backgroundImage
-        fillMode: Image.PreserveAspectCrop
-        visible: mainRect.backgroundImage !== ""
-    }
 
     // system time timer
     Timer {
@@ -386,7 +376,7 @@ Rectangle {
         Text {
             text: "SYSTEM STATUS\n"
             font.family: colors.headerFont
-            font.pointSize: 10
+            font.pointSize: 13
             color: colors.headerText
         }
 
@@ -465,7 +455,7 @@ Rectangle {
         Text {
             text: "UPTIME"
             font.family: colors.headerFont
-            font.pointSize: 10
+            font.pointSize: 13
             color: colors.headerText
         }
 
@@ -508,7 +498,7 @@ Rectangle {
         Text {
             text: "SYSTEM PROFILE\n"
             font.family: colors.headerFont
-            font.pointSize: 10
+            font.pointSize: 13
             color: colors.headerText
         }
 

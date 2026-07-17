@@ -20,7 +20,7 @@ QtObject {
 
     // Font family
     property string mainFont: config.stringValue("mainFont") || "monoMMM_5"
-    property string headerFont: config.stringValue("headerFont") || "DIN"
+    property string headerFont: config.stringValue("headerFont") || "MagdaCleanMono"
     property string samaritanFont: config.stringValue("samaritanFont") || "MagdaCleanMono"
     
 }
