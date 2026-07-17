@@ -35,4 +35,4 @@ fi
 # installation successful announcement
 echo -e "${green}Samaritan theme was installed successfully!"
 
-echo -e "${green}You can preview the theme now by running:\nsddm-greeter --test-mode --theme /usr/share/sddm/samaritan/"
+echo -e "${green}You can preview the theme now by running:\nsddm-greeter --test-mode --theme /usr/share/sddm/themes/samaritan/"
