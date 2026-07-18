@@ -36,7 +36,26 @@ https://github.com/user-attachments/assets/4ed55303-bb48-4a4c-9c4a-4141624bdf30
 ## Installation
 Currently i am only providing a manual installation method since my install.sh script is not yet complete and might not work properly. I will add it as a method when I feel it becomes more complete and reliable to use.
 
-### Method 1: Manual installation
+
+### Method 1: Install script
+
+
+#### Clone the repo and cd into the theme directory 
+
+```bash
+git clone https://github.com/omerwk/samaritan-sddm-theme.git samaritan/
+cd samaritan
+```
+
+#### Make the script executable and run it
+
+```bash
+sudo chmod +x install.sh
+sudo ./install.sh
+```
+
+
+### Method 2: Manual installation
 
 ```bash
 git clone https://github.com/omerwk/samaritan-sddm-theme.git samaritan/
@@ -58,6 +77,7 @@ sudo nano /etc/sddm.conf
 Current=samaritan
 ```
 
+
 ### Preview the theme
 
 You can preview the theme without having to logout by running:
@@ -65,7 +85,6 @@ You can preview the theme without having to logout by running:
 ```bash
 sddm-greeter --test-mode --theme /usr/share/sddm/samaritan
 ```
-
 
 
 ## Customization
