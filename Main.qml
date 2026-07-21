@@ -496,11 +496,16 @@ Rectangle {
 
         // Header
         Text {
-            text: "SYSTEM PROFILE\n"
+            text: "SYSTEM PROFILE"
             font.family: colors.headerFont
             font.pointSize: 13
             color: colors.headerText
         }
+
+        Item {
+                width: 1
+                height: 16
+            }
 
         // Information
         Column {
@@ -558,7 +563,7 @@ Rectangle {
                 }
 
                 Text {
-                    text: "1.2.951.04\n"
+                    text: "1.2.951.04"
                     font.family: colors.mainFont
                     font.pointSize: 9
                     color: colors.secondaryText
@@ -567,7 +572,8 @@ Rectangle {
             }
 
             Item {
-                height: 8
+                width: 1
+                height: 16
             }
 
             Row {
@@ -622,7 +628,7 @@ Rectangle {
                 }
 
                 Text {
-                    text: SystemInfo.architecture + "\n"
+                    text: SystemInfo.architecture
                     font.family: colors.mainFont
                     font.pointSize: 9
                     color: colors.secondaryText
@@ -631,7 +637,8 @@ Rectangle {
             }
 
             Item {
-                height: 8
+                width: 1
+                height: 16
             }
 
             Row {
