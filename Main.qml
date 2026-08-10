@@ -34,6 +34,9 @@ Rectangle {
     property int passwordFieldOffsetX: config.intValue("passwordFieldOffsetX") || 0
     property int passwordFieldOffsetY: config.intValue("passwordFieldOffsetY") || 0
     property real elementOpacity: ConfigManager.getElementOpacity(config)
+    // scaling properties
+    property real designHeight: 1080 // 1080p is the reference res
+    property real scaleFactor: Math.min(1.0, height / designHeight)
     // Fade-in animation state
     property bool fadeInComplete: false
 
@@ -327,8 +330,10 @@ Rectangle {
     Text {
         text: "SAMARITAN v1.2.951.04"
         font.family: colors.samaritanFont
-        font.pointSize: 20
-        y: parent.height / 2 - 500
+        font.pointSize: 20 * scaleFactor
+        // y: parent.height / 2 - (500 *  scaleFactor)
+        anchors.top: parent.top
+        anchors.topMargin: 40
         anchors.left: parent.left
         anchors.leftMargin: 40
         color: colors.primaryText
@@ -349,7 +354,9 @@ Rectangle {
         font.family: colors.mainFont
         font.pointSize: 9
         color: colors.secondaryText
-        y: parent.height / 2 - 450
+        // y: parent.height / 2 - 450
+        anchors.top: parent.top
+        anchors.topMargin: 80
         anchors.left: parent.left
         anchors.leftMargin: 40
         opacity: titleVisible ? 1 : 0
