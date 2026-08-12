@@ -24,6 +24,12 @@ chmod +x *.sh
 # and then execute this one to write the SystemInfo.js file
 ./update-system-info.sh
 
+
+# install fonts to system
+cd
+sudo mkdir -p /usr/share/fonts/TTF
+sudo cp samaritan/assets/fonts/{magdacleanmono-bold,monoMMM_5}.ttf /usr/share/fonts/TTF/
+
 # make sddm use samaritan as the theme
 cd
 if grep -q "^Current=" /etc/sddm.conf; then
